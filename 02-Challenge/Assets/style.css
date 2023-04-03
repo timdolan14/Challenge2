@@ -1,0 +1,51 @@
+/* Universal Selector */
+* {
+    padding: 0px;
+    Margin: 10px;
+}
+/* Element Selector */
+
+body{
+    background-color: lightblue;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: gray;
+    padding: 10px;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    font-size: 25px;
+    /* display: inline-block; */
+    text-align: right;
+    justify-content: space-evenly;
+    float: right;
+}
+
+.SR-Body {
+    width: 300px;
+    height: auto;
+    padding-left: 200px;
+}
+
+.LW-Body,
+.Calc-Body,
+.Pretz-Body,
+.RB-Body {
+    padding-left: 400px; 
+}
+
+.Contact-Me nav ul li {
+    font-size: 25px;
+    display: inline-block;
+
+}
