@@ -2,50 +2,162 @@
 * {
     padding: 0px;
     Margin: 10px;
+    font-family: Arial, Helvetica, sans-serif
 }
 /* Element Selector */
 
+/* :root {
+    --imageText: color: whitesmoke; font-size: 15px; background-color: black; width: 100px; 
+} */
+
 body{
-    background-color: lightblue;
+    background-color: white;
+    color: black;
 }
 
-header {
-    font-family: 'Courier New', Courier, monospace;
+main nav {
+    display: flex;
+    align-items: center;
     color: black;
     background-color: gray;
     padding: 10px;
     margin-right: 20px;
     list-style-type: none;
+    font-size: 30px;
+    height: 100px;
+    border: dashed black;
 }
 
-header nav ul {
+nav h1 {
+    color: aliceblue;
+    background-color: blueviolet;
+    font-size: 75px;
+    padding-left: 75px;
+}
+
+nav ul {
     list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    font-size: 30px;
+    color: blue;
 }
 
-header nav ul li {
-    margin-left: 20px;
-    font-size: 25px;
-    /* display: inline-block; */
-    text-align: right;
-    justify-content: space-evenly;
-    float: right;
+header  {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    height: 200px;
+    margin-right: 20px;
 }
 
-.SR-Body {
-    width: 300px;
-    height: auto;
-    padding-left: 200px;
+header h1 {
+    display: flex;
+    align-items: flex-end;
+    background-color: aqua;
+    align-self: baseline;
 }
 
-.LW-Body,
-.Calc-Body,
-.Pretz-Body,
-.RB-Body {
-    padding-left: 400px; 
-}
-
-.Contact-Me nav ul li {
+.About-Me p {
+    margin-left: 400px;
     font-size: 25px;
     display: inline-block;
+    color: green;
+}
+/* Surf Report Photo */
+.Work-Objects {
+    margin-left: 400px;
+}
 
+/* Surf Report Photo */
+.Surf-Report img {
+    height: 600px;
+    width: 75%;
+    border: solid blue;
+}
+
+/* Smaller Text in Surf Report Photo */
+.Work-Objects p {
+    color: greenyellow;
+    font-size: 12px;
+}
+
+/* Side Headers */
+h2 {
+    font-size: 60px;
+    display: flex;
+    flex: 1;
+    /* border-right: dashed black; */
+}
+
+/* Larger Text in Photos */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: yellow;
+    /* line-height: 1px; */
+    font-size: 30px;
+    background-color: black;
+    width: 100px;
+} 
+
+/* Smaller Text in Photo */
+.imgGrid p {
+    color: whitesmoke;
+    font-size: 15px;
+    background-color: black;
+    width: 100px; 
+}
+
+/* Position Format for text on photos */
+.imgInfoContainer {
+    position: relative;
+    bottom: 150px;
+}
+
+/* Remaining 4 Images */
+.imgGrid img {
+    height: 300px;
+    width: 40%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    border: solid yellow;
+    columns: 100px 2;
+
+
+/*  Code from Example
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    justify-content: center; */
+  
+}
+
+.Contact-Me h4 {
+    Font-size: 60px;
+    display: flex;
+    border-right: dashed black;
+}
+
+.Contact-Me ul {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: 30px;
+    height: 100px;
+}
+
+footer {
+    text-align: Center;
+    color: black;
+    font-size: 25px;
 }
