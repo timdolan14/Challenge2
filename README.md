@@ -6,7 +6,7 @@ https://timdolan14.github.io/Dolan-Co./
 
 ## GitHub Link
 
-https://github.com/timdolan14/Dolan-Co
+https://github.com/timdolan14/Dolan-Co.
 
 ## Description
 
