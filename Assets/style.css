@@ -7,7 +7,7 @@
 /* Element Selector */
 
 body {
-    background-color: rgb(230, 225, 225);
+    background-color: white;
     color: black;
     width: 100%;
 }
@@ -16,7 +16,7 @@ main nav {
     display: flex;
     align-items: center;
     color: black;
-    background-color: rgb(247, 182, 182);
+    background-color: rgb(235, 194, 203);
     padding: 10px;
     width: 100%;
     list-style-type: none;
@@ -29,13 +29,16 @@ nav h1 {
     background-color: black;
     font-size: 75px;
     padding-left: 50px;
+    height: 100px;
+    text-align: center;
+    width: 600px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     flex: 1;
-    justify-content: end;
+    justify-content: flex-end;
     font-size: 40px;
 }
 
@@ -43,21 +46,21 @@ main nav ul a {
     margin: 0px, 10px;
     display: inline;
     padding: 25px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 header  {
-    background: url(https://mobimg.b-cdn.net/v3/fetch/b4/b4d430320229744245679e19e50b6f03.jpeg);
+    background: url(https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-091-eternal-constance.png);
     display: flex;
+    /* background-repeat: no-repeat; */
     justify-content: flex-end;
     align-items: flex-end;
     height: 600px;
     width: 100%;
-    border: solid black;
 }
 
 header h1 {
-    background-color: yellow;
+    background-color: rgba(173, 176, 218, 0.984);
     font-size: 45px;
     align-self: baseline;
     margin: 0px;
@@ -84,11 +87,11 @@ header h1 {
     font-size: 40px;
     color: black;
     border-left: solid navy;
+    border-width: thick;
     padding-left: 2%;
 }
 
 /* Work Section */
-
 .Work h2 {
     display: inline-block;
     margin-top: 2%;
@@ -103,6 +106,7 @@ header h1 {
     margin-left: 400px;
     margin-top: 0%;
     border-left: solid navy;
+    border-width: thick;
     padding: 28px;
     padding-bottom: 0px;
 }
@@ -113,18 +117,12 @@ header h1 {
     width: 95%;
     border: solid black;
     margin-top: 0%;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
-.Surf-Report img:hover {
+.Surf-Report img:hover {opacity: 1;
     box-shadow: inset 0px 0px 30px rgb(19, 93, 242), 0 0 30px rgb(19, 93, 242);
-}
-
-/* Smaller Text in Surf Report Photo */
-.Work-Objects p {
-    color: whitesmoke;
-    background-color: black;
-    font-size: 25px;
-    width: 200px;
 }
 
 /* Larger Text in Photos */
@@ -132,19 +130,11 @@ h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     color: yellow;
-    font-size: 50px;
+    font-size: 40px;
     background-color: black;
-    width: 280px;
-    height: 75px;
-} 
-
-/* Smaller Text in Photo */
-.imgGrid p {
-    color: whitesmoke;
-    font-size: 25px;
-    background-color: black;
-    width: 275px;
-    height: 40px;
+    width: 450px;
+    height: 100px;
+    text-align: center;
 }
 
 /* Position Format for text on photos */
@@ -160,9 +150,11 @@ h3 {
     width: 90%;
     display: flex;
     align-self: center;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
-.imgGrid img:hover{
+.imgGrid img:hover{ opacity: 1;
     box-shadow: inset 0px 0px 30px rgb(19, 93, 242), 0 0 30px rgb(19, 93, 242);
 }
 
@@ -174,6 +166,11 @@ h3 {
 }
 
 /* Contact Me Portion */
+
+.Contact-Me {
+    padding-top: 2%;
+}
+
 .Contact-Me h4 {
     display: inline-block;
     padding-right: 0.5%;
@@ -187,7 +184,6 @@ h3 {
     align-items: center;
     color: black;
     padding: 10px;
-    margin-right: 20px;
     list-style-type: none;
     font-size: 30px;
     height: 100px;
@@ -196,17 +192,21 @@ h3 {
 
 .CM-List {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    color: black;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 5px;
+    margin-right: 10%;
     list-style-type: none;
     font-size: 30px;
     height: 100px;
     margin-left: 10px;
-    border-left: solid navy;
     position: relative;
+    border-left: solid navy;
+    border-width: thick;
+}
+
+.CM-List a {
+    padding-left: 0px;
 }
 
 .Contact-Me ul li {
@@ -219,17 +219,57 @@ h3 {
 footer {
     text-align: Center;
     color: black;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 928px) {
-    nav,
+@media screen and (max-width: 400px) {
+    main nav,
     header,
-    h1 {
+    nav h1 {
+        flex: wrap;
+        width: 50%;
+        font-size: 10px;
+    }
+
+    h3 {
+
+        font-size: 10px;
+    }
+
+    .imgInfoContainer,
+    .Surf-Report,
+    #Work {
+        flex: 0 0 33%;
+        /* width: 100%; */
+        flex-direction: row;
+        grid-template-columns: 1fr;
+    }
+
+    .imgGrid {
+        grid-template-rows: auto;
+    }
+
+}
+
+@media screen and (max-width: 928px) {
+    main nav,
+    header,
+    nav h1
+    {
         flex: 0 0 33%;
         width: 100%;
+        font-size: 10px;
+    }
+
+    h3 {
+
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
     }
 
     .imgGrid,
@@ -240,3 +280,4 @@ footer {
         width: 100%;
     }
 }
+
