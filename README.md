@@ -2,7 +2,7 @@
 
 ## Deployed URL
 
-https://timdolan14.github.io/Dolan-Co./
+https://timdolan14.github.io/Dolan-Co/
 
 ## GitHub Link
 
