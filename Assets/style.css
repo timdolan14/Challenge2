@@ -213,15 +213,6 @@ h3 {
     margin-left: 150px;
     display: flex;
 }
-
-/* Footer */
-
-footer {
-    text-align: Center;
-    color: black;
-    font-size: 40px;
-}
-
 /* Media Queries */
 
 @media screen and (max-width: 400px) {
