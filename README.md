@@ -15,7 +15,7 @@ A portfolio of work can showcase your skills and talents to employers looking to
 
 ## Usage
 
-To review this Site Creation, you can review the notes in each section. For suggestions on what to study first, open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser.
+To review this Site Creation, you can review the notes in each section. Open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser.
 
 ## Credits
 
