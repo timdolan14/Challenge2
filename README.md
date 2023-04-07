@@ -1,4 +1,4 @@
-## Challenge 02
+## Dolan & Co.
 
 ## Deployed URL
 
