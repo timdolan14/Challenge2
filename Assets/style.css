@@ -52,7 +52,6 @@ main nav ul a {
 header  {
     background: url(https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-091-eternal-constance.png);
     display: flex;
-    /* background-repeat: no-repeat; */
     justify-content: flex-end;
     align-items: flex-end;
     height: 600px;
@@ -91,6 +90,10 @@ header h1 {
     padding-left: 2%;
 }
 
+.About-Me img {
+    height: 300px;
+}
+
 /* Work Section */
 .Work h2 {
     display: inline-block;
@@ -101,7 +104,7 @@ header h1 {
     text-align: center;
 }
 
-/* Surf Report */
+/* R & R */
 .Work-Objects {
     margin-left: 400px;
     margin-top: 0%;
@@ -111,8 +114,7 @@ header h1 {
     padding-bottom: 0px;
 }
 
-/* Surf Report Photo */
-.Surf-Report img {
+.RR img {
     height: 1000px;
     width: 95%;
     border: solid black;
@@ -121,7 +123,7 @@ header h1 {
     transition: 0.3s;
 }
 
-.Surf-Report img:hover {opacity: 1;
+.RR img:hover {opacity: 1;
     box-shadow: inset 0px 0px 30px rgb(19, 93, 242), 0 0 30px rgb(19, 93, 242);
 }
 
@@ -213,6 +215,7 @@ h3 {
     margin-left: 150px;
     display: flex;
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 400px) {
@@ -233,7 +236,6 @@ h3 {
     .Surf-Report,
     #Work {
         flex: 0 0 33%;
-        /* width: 100%; */
         flex-direction: row;
         grid-template-columns: 1fr;
     }
