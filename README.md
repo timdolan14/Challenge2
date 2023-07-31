@@ -12,8 +12,7 @@ https://github.com/timdolan14
 
 ![SC](./Photos/SC.png)
 
-
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies. We have created a portfolio to showcase our abilities with HTML and CSS.
+Welcome to a sample portfolio showcasing my passion for web development! Using HTML and CSS, I've crafted a visually appealing and user-friendly platform to present sample projects and skills. With a clean and modern design, this sample portfolio reflects my commitment to creating elegant and functional user experiences. Discover my coding expertise, proficiency in CSS styling, and mastery of HTML elements as you navigate through my projects.
 
 
 ## Usage
